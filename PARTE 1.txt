@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feliz cumpleaños, mi amor</title>
+	<style type="text/css">
+		body {
+			background-color: #ffefd5;
+			background-image: linear-gradient(to bottom right, #ffefd5, #ffe6cc);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			color: #8b0000;
+			margin-top: 50px;
+			font-size: 50px;
+			text-shadow: 2px 2px #ffe6cc;
+		}
+
+		.container {
+			margin: 0 auto;
+			width: 80%;
+			max-width: 1200px;
+		}
+
+		.img-container {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.img-container img {
+			width: 200px;
+			margin: 0 50px;
+			cursor: pointer;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.img-container img:hover {
+			transform: rotate(360deg);
+		}
+
+		.door {
+			width: 400px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+		}
+
+		.door img {
+			max-width: 100%;
+		}
+
+		.key {
+			width: 100px;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.key:hover {
+			transform: rotate(180deg) translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<audio autoplay loop>
+		<source src="ubicacion_de_tu_musica.mp3" type="audio/mpeg">
+	</audio>
+
+	<h1>Feliz cumpleaños, mi amor</h1>
+
+	<div class="container">
+		<div class="img-container">
+			<img src="ubicacion_de_tu_imagen_de_corazon.png" alt="Corazón">
+			<img src="ubicacion_de_tu_imagen_de_estrella.png" alt="Estrella">
+		</div>
+
+		<div class="door">
+			<img src="ubicacion_de_tu_imagen_de_puerta_cerrada.png" alt="Puerta cerrada">
+			<img class="key" src="ubicacion_de_tu_imagen_de_llave.png" alt="Llave">
+		</div>
+	</div>
+</body>
+</html>
